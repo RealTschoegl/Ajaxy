@@ -1,0 +1,4 @@
+$(function () {
+	$('.comment[data-id="<%=@comment.id%>"]').next().remove();
+	$('.comment[data-id="<%=@comment.id%>"]').remove();
+})();

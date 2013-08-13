@@ -1,0 +1,3 @@
+$(function () {
+	$('.comment[data-id="<%=@comment.id%>"] .score').text("<%= pluralize(@comment.score, 'like', 'likes') %>");
+})();
